@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86ae1ba6cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>IgorWebSites</title>
+</head>
+<body>
+    <section class="main">
+		<div class="layer"></div>
+		<div class="center">
+			<header>
+				<div class="icons-social">
+					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div><!--icons-social-->
+				<div class="clear"></div>
+				<div class="logo">
+					IgorWebDesign
+				</div><!--logo-->
+				<nav class="desktop">
+					<ul>
+						<li><a href="home">Home</a></li>
+						<li><a href="sobre">Sobre</a></li>
+						<li><a href="contato">Contato</a></li>
+					</ul>
+				</nav>
+				<nav class="mobile">
+					<i class="fa fa-bars"></i>
+					<ul>
+						<li><a href="home">Home</a></li>
+						<li><a href="sobre">Sobre</a></li>
+						<li><a href="contato">Contato</a></li>
+					</ul>	
+				</nav>
+				<div class="clear"></div>
+			</header>
+			<div class="conteudo-header">
+				<h2>Bienvenido(a) a mi <span>website!</span></h2>
+				<p>Somos tu fuente confiable para soluciones creativas de diseño web. Nuestro equipo está dedicado a brindarte una experiencia excepcional mientras construimos juntos la presencia en línea perfecta para tu negocio.</p>
+
+                    <p>Aquí en Igorwebdesign, nos enorgullecemos de ofrecer diseños innovadores y funcionales que te ayudarán a destacar en la web. Ya sea que necesites una página web desde cero o una renovación de tu sitio existente, nuestro equipo de expertos estará encantado de asumir el desafío.</p>
+                    
+                    <p>Trabajamos de cerca con nuestros clientes para comprender sus necesidades y objetivos, creando soluciones a medida que reflejen la esencia de su marca. Nuestro enfoque centrado en el cliente garantiza que estés involucrado en cada paso del proceso, desde la concepción hasta el lanzamiento final.</p>
+                    
+                    <p>Así que, si buscas llevar tu presencia en línea al siguiente nivel, no dudes en ponerte en contacto con nosotros. ¡Estamos entusiasmados de colaborar contigo y hacer realidad tus sueños digitales!</p>
+				<a href="">Saiba mais!</a>
+			</div><!--conteudo-header-->
+		</div><!--center-->
+	</section><!--main-->
+
+    <footer>
+		<p>Todos los Derechos Reservados IgorWebSites</p>
+	</footer>
+
+    <footer class="footer1">
+        <div class="left">
+          <p>Dirección: Av. San Pablo 3610, Quinta Normal</p> 
+          <br>
+          <p>Teléfono: (+56) 9.9765-4264</p>
+        </div>
+        <div class="right">
+          <ul class="menu">
+            <li><a href="#terminos">Términos</a></li>
+            <br>
+            <li><a href="#privacidad">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$(function(){
+			$('nav.mobile i').click(function(){
+				var el = $(this).parent().find('ul');
+				if(el.is(':visible') == false){
+				 el.fadeIn();
+				}else{
+					el.fadeOut();
+				}
+			})
+		})
+	</script> 
+</body>
+</html>
